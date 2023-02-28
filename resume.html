@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jingxuan_Liu_Resume</title>
+    <style>
+        /* ------Global------- */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400&family=Roboto:wght@500&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        :root {
+            --light: #374c51;
+            --variant: #176c8a;
+            --variant-dark: #214149;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Roboto Condensed', sans-serif;
+            background-color: rgb(54, 54, 54);
+        }
+
+        header {
+            display: grid;
+            grid-template-columns: 1fr auto;
+        }
+
+        @media screen and (max-width: 450px) {
+            header {
+                grid-template-columns: 1fr;
+                row-gap: 1rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        section {
+            margin-top: 1rem;
+        }
+
+        article {
+            margin-top: 0.5rem;
+            position: relative;
+        }
+
+        footer {
+            width: 100%;
+            margin-top: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--variant);
+        }
+
+        h1, h2, h3, p {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            color: var(--variant-dark);
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+
+        h2 {
+            border-bottom: 1px solid #176b8a84;
+            margin-bottom: 0.5rem;
+            color: var(--light);
+            font-weight: 400;
+        }
+
+        h3 {
+            color: var(--variant);
+            font-weight: 400;
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: black;
+            opacity: 0.5;
+            margin: 0 0 0.5rem;
+        }
+
+        ul, ol {
+            margin: 0.25rem 0 0 0;
+            padding-left: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.25rem;
+        }
+
+        p, li {
+            line-height: 1.2;
+            font-size: 14px;
+        }
+
+        a {
+            color: var(--variant);
+            font-size: 15px;
+            font-style: italic;
+        }
+
+        .container {
+            margin: 1rem auto;
+            min-width: 250px;
+            max-width: 782px;
+            background-color: white;
+            padding: min(5rem, 10%) min(4rem, 8%) 3rem;
+        }
+
+        @media screen and (max-width: 782px) {
+            .container {
+                margin: 0 auto;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .container {
+                padding: 3rem 5%;
+            }
+        }
+
+        /* ------Header------- */
+
+        .header-left p {
+            font-style: italic;
+            margin-left: 4px;
+            color: var(--light);
+        }
+
+        .header-right {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            column-gap: 0.5rem;
+        }
+
+        .header-right img {
+            width: 20px;
+        }
+
+        .github-short {
+            display: none;
+        }
+
+        @media screen and (max-width: 450px) {
+            .github-short {
+                display: block;
+            }
+            .github-long {
+                display: none;
+            }
+        }
+
+        @media screen and (max-width: 720px) {
+            .link-content {
+                display: none;
+            }
+        }
+
+        /* ------Body------- */
+
+        .skill-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        @media screen and (max-width: 425px) {
+            .skill-container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 0.75rem;
+            }
+        }
+
+        .two-cols-header {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            gap: 1rem;
+        }
+
+        @media screen and (max-width: 512px) {
+            .two-cols-header {
+                align-items: flex-start;
+            }
+        }
+
+        .timeline {
+            text-align: end;
+            color: var(--light);
+        }
+
+        .project-overview {
+            display: flex;
+            gap: 0.5rem;
+            align-items: baseline;
+        }
+
+        @media screen and (max-width: 550px) {
+            .project-overview  {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0;
+            }
+        }
+
+        .project-overview p {
+            font-style: italic;
+            color: var(--light);
+        }
+
+        .project-links {
+            position: absolute;
+            right: 0;
+            top: 2px;
+            display: flex;
+            gap: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-left">
+                <h1>Jingxuan Liu</h1>
+                <p>taosit099@gmail.com</p>
+            </div>
+            <div class="header-right">
+                <img src="https://img.icons8.com/ios-glyphs/30/null/github.png"/>
+                <a class="github-long" href="https://github.com/Taosit" target="_blank">https://github.com/Taosit</a>
+                <a class="github-short" href="https://github.com/Taosit" target="_blank">Taosit</a>
+                <img src="https://img.icons8.com/ios-glyphs/30/null/link--v1.png"/>
+                <a href="https://www.jing-xuan.tech" target="_blank">https://www.jing-xuan.tech</a>
+            </div>
+        </header>
+        <main>
+            <section class="skills">
+                <h2>Skills</h2>
+                <div class="skill-container">
+                    <div class="skill-colunm">
+                        <h3>Web Basics</h3>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JS & TS</li>
+                        </ul>
+                    </div>
+                    <div class="skill-colunm">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li>React</li>
+                            <li>Next.js</li>
+                            <li>Tailwind</li>
+                        </ul>
+                    </div>
+                    <div class="skill-colunm">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li>Node & Deno</li>
+                            <li>MongoDB</li>
+                            <li>Socket.io</li>
+                        </ul>
+                    </div>
+                    <div class="skill-colunm">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Figma</li>
+                            <li>GitHub</li>
+                            <li>VSCode</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section class="experience">
+                <h2>Experience</h2>
+                <div class="two-cols-header">
+                    <h3 class="job-title">Web Developer at UBC Visual Cognition Lab</h3>
+                    <p class="timeline">Oct. 2022 - present</p>
+                </div>
+                <ul>
+                    <li>Migrated the frontend from Create-React-App to NextJS and improved the speed index by 60%.</li>
+                    <li>Migrated the backend from Node + Express to NextJS API routes + SSR, from JS to TS.</li>
+                    <li>Improved responsiveness for all the existing pages and made the website compatible on mobile devices.</li>
+                    <li>Advocated for better practices and better performance in meetings.</li>
+                </ul>
+            </section>
+            <section class="projects">
+                <h2>Projects</h2>
+                <article>
+                    <div class="project-overview">
+                        <h3>Lingpal</h3>
+                        <p>A multiplayer game for language practice</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://lingpal.vercel.app/" target="_blank">Link<span class="link-content">(lingpal.vercel.app)</span></a>
+                        <a href="https://github.com/Taosit/Lingpal" target="_blank">GitHub<span class="link-content">(Lingpal)</span></a>
+                    </div>
+                    <ul class="project-details">
+                        <li>Built client-side code with NextJS featuring note taking, rating, player statistics, etc. </li>
+                        <li>Integrated NextJS API routes to provide secure authentication and profile update.</li>
+                        <li>Implemented server-side logic with Deno to respond to 15+ different socket events (player messaging, leaving, winning, etc.) and handle rooms to support simultaneous game sessions.</li>
+                        <li>Designed a clean and modern UI with Figma and implemented it using CSS,  Tailwind, and Framer Motion.</li>
+                    </ul>
+                </article>
+                <article>
+                    <div class="project-overview">
+                        <h3>Recipear</h3>
+                        <p>A recipe app featuring Speech Recognition</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://recipear.netlify.app/" target="_blank">Link<span class="link-content">(recipear.netlify.app)</span></a>
+                        <a href="https://github.com/Taosit/Recipear" target="_blank">GitHub<span class="link-content">(Recipear)</span></a>
+                    </div>
+                    <ul class="project-details">
+                        <li>Implemented complete CRUD functionalities along with searching, filtering and saving recipes. </li>
+                        <li>Integrated Speech Recognition using React-Speech-Recognition library to provide a hand-free experience when cooking (i.e. auto-advancing the recipe and setting multiple timers).</li>
+                        <li>Utilized Firebase for user authentication and data storage and retrieval.</li>
+                    </ul>
+                </article>
+                <article>
+                    <div class="project-overview">
+                        <h3>Read-y</h3>
+                        <p>A website to help Mandarin learners read texts</p>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://read-y.netlify.app/" target="_blank">Link<span class="link-content">(read-y.netlify.app)</span></a>
+                        <a href="https://github.com/Taosit/Read-y" target="_blank">GitHub<span class="link-content">(Read-y)</span></a>
+                    </div>
+                    <ul class="project-details">
+                        <li>Built with vanilla JavaScript and bundled with Webpack to achieve a high performance score.</li>
+                        <li>Implemented word tokenization, phonetics annotation, and definition lookup and quick annotation.</li>
+                        <li>Integrated PDF download for annotated documents.</li>
+                    </ul>
+                </article>
+            </section>
+            <section class="education">
+                <h2>Education</h2>
+                <div class="two-cols-header">
+                    <h3 class="education-title">University of British Columbia</h3>
+                    <p class="timeline">Sept. 2019 - May 2023</p>
+                </div>
+                <ul class="education-details">
+                    <li>Major in Computer Science</li>
+                    <li>86% GPA</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>Jingxuan Liu | taosit099@gmail.com</p>
+        </footer>
+    </div>
+</body>
+</html>

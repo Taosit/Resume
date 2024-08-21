@@ -89,12 +89,13 @@
               </g>
             </g>
           </svg>
-          <a href="https://www.jing-xuan.tech" target="_blank"
-            >https://www.jing-xuan.tech</a
+          <a href="https://jingxuan.me/" target="_blank"
+            >https://jingxuan.me/</a
           >
         </div>
       </header>
       <main>
+        <p class="intro">A strong developer with a focus on Web Development. Thrives in fast-paced, diverse, and collaborative environments.</p>
         <section class="skills">
           <h2>Skills</h2>
           <div class="skill-container">
@@ -103,14 +104,14 @@
               <ul>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>JavaScript</li>
+                <li>TypeScript</li>
               </ul>
             </div>
             <div class="skill-colunm">
               <h3>Frontend</h3>
               <ul>
-                <li>React</li>
-                <li>Next.js</li>
+                <li>React & Next.js</li>
+                <li>Vue.js</li>
                 <li>Tailwind</li>
               </ul>
             </div>
@@ -118,8 +119,8 @@
               <h3>Backend</h3>
               <ul>
                 <li>Node & Deno</li>
+                <li>REST API & GraphQL</li>
                 <li>PostgreSQL</li>
-                <li>MongoDB</li>
               </ul>
             </div>
             <div class="skill-colunm">
@@ -130,34 +131,93 @@
                 <li>VSCode</li>
               </ul>
             </div>
+            <div class="skill-colunm">
+              <h3>Others</h3>
+              <ul>
+                <li>Python</li>
+                <li>Java</li>
+                <li>AI Development</li>
+              </ul>
+            </div>
           </div>
         </section>
         <section class="experience">
-          <h2>Experience</h2>
-          <div class="two-cols-header">
-            <h3 class="job-title">Web Developer at UBC Visual Cognition Lab</h3>
-            <p class="timeline">Oct. 2022 - present</p>
+          <h2>Work Experience</h2>
+          <div>
+            <!-- <h3 class="work-section-title">AI Experience</h3> -->
+            <article>
+              <div class="two-cols-header">
+                <h3 class="job-title">Web Developer at Cosmio Technology</h3>
+                <p class="timeline">Jun. 2024 - current</p>
+              </div>
+              <ul>
+                <li>
+                  Created a customizable template allowing clients to easily add and configure AI chatbots for their websites.
+                </li>
+                <li>
+                  Improved chatbot capabilities by implementing knowledge storage, link management, and function calls for optimized user interactions.
+                </li>
+              </ul>
+            </article>
+            <article>
+              <div class="two-cols-header">
+                <h3 class="job-title">AI Coding Trainer</h3>
+                <p class="timeline">Jan. 2024 - current</p>
+              </div>
+              <ul>
+                <li>
+                  Engaged with AI to verify coding responses, identifying and resolving bugs and inaccuracies to ensure high-quality output.
+                </li>
+                <li>
+                  Reviewed and rated AI coding interactions, refining responses by editing and correcting issues as needed.
+                </li>
+              </ul>
+            </article>
           </div>
-          <ul>
-            <li>
-              Migrated the frontend from Create-React-App to NextJS and improved
-              the speed index by 60%.
-            </li>
-            <li>
-              Migrated the backend from Node + Express to NextJS API routes +
-              SSR, from JavaScript to TypeScript.
-            </li>
-            <li>
-              Improved responsiveness for all the existing pages and made the
-              website compatible on mobile devices.
-            </li>
-            <li>
-              Advocated for better practices and better performance in meetings.
-            </li>
+          <div>
+            <!-- <h3 class="work-section-title">Full-Stack Developer</h3> -->
+            <article>
+              <div class="two-cols-header">
+                <h3 class="job-title">Web Developer at GTM Plutot</h3>
+                <p class="timeline">Sept. 2023 - May. 2024</p>
+              </div>
+              <ul>
+                <li>
+                  Defined the tech stack of their flagship fleet management software and reached MVP in 3 months.
+                </li>
+                <li>
+                  Took the lead on code editor and virtual file system, and used infinite queries and virualization to manage and display data at scale
+                </li>
+              </ul>
+            </article>
+            <article>
+              <div class="two-cols-header">
+                <h3 class="job-title">Web Developer at UBC Visual Cognition Lab</h3>
+                <p class="timeline">Oct. 2022 - Feb. 2023</p>
+              </div>
+              <ul>
+                <li>
+                  Upgraded the tech stack to adopt best practices, improving the architecture for enhanced performance and scalability.
+                </li>
+                <li>
+                  Boosted page performance by 60% and optimized responsiveness across all existing pages.
+                </li>
+              </ul>
+            </article>
+          </div>
+        </section>
+        <section class="education">
+          <h2>Education</h2>
+          <div class="two-cols-header">
+            <h3 class="education-title">University of British Columbia </h3>
+            <p class="timeline">Sept. 2019 - May 2023</p>
+          </div>
+          <ul class="education-details">
+            <li>Bachelor in Computer Science with Distinction</li>
           </ul>
         </section>
         <section class="projects">
-          <h2>Projects</h2>
+          <h2>Portfolio Projects</h2>
           <article>
             <div class="project-overview">
               <h3>Lingpal</h3>
@@ -173,17 +233,11 @@
             </div>
             <ul class="project-details">
               <li>
-                Built client-side code with NextJS featuring note taking,
-                rating, player statistics, etc.
+                Built a full-stack complete application featuring real-time
+                functionalities implemented with Socket.IO and WebRTC.
               </li>
               <li>
-                Integrated NextJS API routes to provide secure authentication
-                and profile update.
-              </li>
-              <li>
-                Implemented server-side logic with Deno to respond to 15+
-                different socket events (player messaging, leaving, winning,
-                etc.) and handle rooms to support simultaneous game sessions.
+                Tested with Playwright to ensure the correctness of the game logic and player interactions.
               </li>
               <li>
                 Designed a clean and modern UI with Figma and implemented it
@@ -192,6 +246,29 @@
             </ul>
           </article>
           <article>
+            <div class="project-overview">
+              <h3>JTracker</h3>
+              <p>A Chrome extension to track job applications</p>
+            </div>
+            <div class="project-links">
+              <a href="https://chromewebstore.google.com/detail/jtracker/fkhcajjommcjphlkfdflnnlgaamjihld?hl=en&authuser=0" target="_blank"
+                >Link<span class="link-content">
+                  (Chrome Store: JTracker)</span></a
+              >
+              <a href="https://github.com/Taosit/JTracker" target="_blank"
+                >GitHub<span class="link-content">(JTracker)</span></a
+              >
+            </div>
+            <ul class="project-details">
+              <li>
+                Utilized a variety of Chrome APIs such as storage, tabs, and contentMenus to provide a seamless user experience.
+              </li>
+              <li>
+                Implemented a content script which injects a draggable popup window into the current tab, allowing users to interactwith the extension while staying on the same page.
+              </li>
+            </ul>
+          </article>
+          <!-- <article>
             <div class="project-overview">
               <h3>Recipear</h3>
               <p>A recipe app featuring Speech Recognition</p>
@@ -244,23 +321,10 @@
               </li>
               <li>Integrated PDF download for annotated documents.</li>
             </ul>
-          </article>
-        </section>
-        <section class="education">
-          <h2>Education</h2>
-          <div class="two-cols-header">
-            <h3 class="education-title">University of British Columbia</h3>
-            <p class="timeline">Sept. 2019 - May 2023</p>
-          </div>
-          <ul class="education-details">
-            <li>Major in Computer Science</li>
-            <li>86% GPA</li>
-          </ul>
+          </article> -->
+          <p class="more">... and more on <a href="https://jingxuan.me">https://jingxuan.me</a></p>
         </section>
       </main>
-      <footer>
-        <p>Jingxuan Liu | taosit099@gmail.com</p>
-      </footer>
     </div>
   </body>
 </html>

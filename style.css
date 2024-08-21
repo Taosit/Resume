@@ -33,7 +33,7 @@ header {
 }
 
 section {
-  margin-top: 1rem;
+  margin-top: 0.8rem;
 }
 
 article {
@@ -76,6 +76,11 @@ h3 {
   font-weight: 400;
 }
 
+h3.work-section-title {
+  color: var(--variant-dark);
+  font-size: 1rem;
+}
+
 ul,
 ol {
   margin: 0.25rem 0 0 0;
@@ -104,12 +109,16 @@ svg {
   height: 20px;
 }
 
+.intro {
+  margin-top: 0.75rem;
+}
+
 .container {
   margin: 1rem auto;
   min-width: 250px;
   max-width: 782px;
   background-color: white;
-  padding: min(5rem, 10%) min(4rem, 8%) 3rem;
+  padding: min(4rem, 10%) min(3.5rem, 8%) 3rem;
 }
 
 @media screen and (max-width: 782px) {
@@ -220,4 +229,8 @@ svg {
   top: 2px;
   display: flex;
   gap: 1rem;
+}
+
+.more {
+  margin-top: 0.5rem;
 }
